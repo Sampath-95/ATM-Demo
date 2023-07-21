@@ -1,0 +1,5 @@
+<p class="border border-success display"><span *ngIf="num1==''">{{serviceMessage}}</span> <span
+        *ngIf="num1!==''">{{result}}</span>
+    <span class="warning">{{finalMessage}}</span>
+</p>
+<app-body (number1event)="receivenumber1($event)" (getevent)="receivestatus($event)"></app-body>
